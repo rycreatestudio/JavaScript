@@ -1,5 +1,22 @@
 //Variables
 
+/*
+====================================
+Lesson 1 - Variables
+
+Topics Learned:
+- What variables are
+- Using let
+- Using const
+- Strings
+- Numbers
+- Booleans
+- Reassigning variables
+- console.log()
+====================================
+*/
+
+
 /* Example 1 - First Name, Last Name, and Age
 
 let firstName = "Ryan";
