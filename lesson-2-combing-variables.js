@@ -84,13 +84,10 @@ score = score * 2;
 console.log(score);
 */
 
-/*
 let firstName = "Ryan";
 let favoriteGame = "Call of Duty";
 let yearsPlaying = 15;
 
 console.log(firstName + " likes " + favoriteGame);
 console.log(yearsPlaying + 5);
-console.log("Years playing: " + yearsPlaying); 
-*/
-
+console.log("Years playing: " + yearsPlaying);
