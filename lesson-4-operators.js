@@ -23,3 +23,31 @@ Prerequisite:
 ====================================
 */
 
+/*
+console.log(15 % 4);
+
+console.log(20 % 5);
+
+console.log(9 % 2);
+*/
+
+/*
+let score = 100;
+console.log(score);
+*/
+
+/*
+let score = 100;
+score = 150;
+console.log(score);
+*/
+
+/*
+
+console.log(3 < 10);
+*/
+
+/* console.log(10===10); */
+
+/* console.log("10" === 10); */
+
