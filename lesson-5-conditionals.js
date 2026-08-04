@@ -72,3 +72,126 @@ if (score >= 90) {
 
 */
 
+/* if else concepts, temperature example
+
+let temperature = 78; 
+
+if (temperature >=90) {
+    console.log("It's really hot outside!");
+} else if (temperature >= 75) {
+    console.log("It's Warm.");
+} else if (temperature >= 60) {
+    console.log("It's a bit chilly.");
+}
+
+*/
+
+/* Nested conditionals example
+let age = 25; 
+let hasLicense = true;
+
+if (age >= 18)
+    if (hasLicense) {
+        console.log("You can drive!");
+    }
+*/
+
+/* Nested conditionals example with else statement
+
+let age = 16;
+let hasLicense = true;
+
+if (age >= 18) {
+    if (hasLicense) {
+        console.log("You can drive.");
+    }
+} else {
+    console.log("You are too young to drive.");
+}
+*/
+
+/* my attempt: real world example of nested conditionals
+
+let temperature = 60; 
+
+if (temperature <= 60) {
+    console.log("Wear a jacket.");
+} else if (temperature >= 90) {
+    console.log("Wear shorts)");
+}
+
+Notes: what happens if it's 75 out? Nothing gets printed
+
+correction: 
+
+if (temperature <= 60) {
+    console.log("Wear a jacket.");
+} else {
+    console.log("Wear shorts.");
+}
+
+*/
+
+let username = "Ryan";
+let password = "JavaScript123"
+
+if (username === "Ryan" && password === "JavaScript123") {
+    console.log("Login Successful");
+} else {
+    console.log("Login Failed");
+}
+
+/*
+====================================
+Lesson 5 Summary - Conditionals
+
+What I Learned:
+✓ What an if statement is
+✓ How to use else
+✓ How to use else if
+✓ How nested if statements work
+✓ How JavaScript makes decisions based on true or false conditions
+
+Key Concepts:
+
+if
+- Executes code only if a condition is true.
+
+else
+- Executes code if the if condition is false.
+
+else if
+- Allows JavaScript to check multiple conditions.
+- JavaScript stops at the first condition that is true.
+
+Nested if
+- An if statement inside another if statement.
+- The inner if only runs if the outer if is true.
+
+Comparison Operators:
+>   Greater than
+<   Less than
+>=  Greater than or equal to
+<=  Less than or equal to
+=== Strict equality
+
+Logical Operators:
+&&  AND (both conditions must be true)
+||  OR (at least one condition must be true)
+
+Important Things to Remember:
+✓ if asks a question.
+✓ The condition must evaluate to true or false.
+✓ Only one branch of an if / else if / else chain executes.
+✓ JavaScript stops checking once it finds the first true condition.
+✓ Nested if statements only execute if the outer condition is true.
+
+Exercises Completed:
+🏋️ Exercise 5.1 - Weather Decision Program ✅
+🎯 Interview Challenge 5.1 - Login Validation ✅
+
+Confidence:
+⭐⭐⭐⭐⭐ (5/5)
+
+====================================
+*/
