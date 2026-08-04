@@ -51,3 +51,19 @@ console.log(3 < 10);
 
 /* console.log("10" === 10); */
 
+/* console.log(true || false); */
+
+/* final challenge
+
+console.log(10 > 5);
+
+console.log(3 < 2);
+
+console.log(10 === 10);
+
+console.log("10" === 10);
+
+console.log(true && false);
+
+console.log(true || false); */
+
