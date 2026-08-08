@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 3 Project — Save File Inspector</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f1117;
+      color: #e8eaed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 520px;
+    }
+
+    .instructions {
+      background: #1a1d27;
+      border: 1px solid #2a2f3d;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #9aa0b0;
+    }
+
+    .instructions strong { color: #fbbf24; }
+
+    .card {
+      background: #1a1d27;
+      border: 1px solid #2a2f3d;
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #2a2f3d;
+      color: #fbbf24;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 6px;
+    }
+
+    .subtitle {
+      color: #6b7280;
+      font-size: 0.85rem;
+      margin-bottom: 20px;
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #6b7280;
+      margin-bottom: 8px;
+      margin-top: 16px;
+    }
+
+    .section-label:first-of-type { margin-top: 0; }
+
+    .inspector-row {
+      background: #0f1117;
+      border-radius: 8px;
+      padding: 10px 14px;
+      margin-bottom: 8px;
+      font-family: "SF Mono", "Fira Code", monospace;
+      font-size: 0.82rem;
+      line-height: 1.5;
+      color: #9aa0b0;
+      word-break: break-word;
+    }
+
+    .inspector-row.highlight {
+      border-left: 3px solid #fbbf24;
+      color: #e8eaed;
+    }
+
+    .inspector-row.final {
+      border-left: 3px solid #34d399;
+      color: #e8eaed;
+      margin-bottom: 0;
+    }
+
+    .placeholder {
+      color: #4b5563;
+      font-style: italic;
+      font-family: system-ui, sans-serif;
+    }
+
+    .hint {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    kbd {
+      background: #2a2f3d;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="instructions">
+      Open <strong>script.js</strong> and follow the steps.
+      Use the console (<kbd>Cmd+Option+J</kbd>) to check your <code>console.log()</code> and <code>typeof</code> results as you go.
+      The inspector below updates when you complete the final display step.
+    </div>
+
+    <div class="card">
+      <div class="badge">RyCreateStudio QA Lab</div>
+      <div class="card-title">Save File Inspector</div>
+      <p class="subtitle">Scanning game save data for type mismatches…</p>
+
+      <div class="section-label">Field Types</div>
+      <div class="inspector-row" id="row-1"><span class="placeholder">Waiting for final step…</span></div>
+      <div class="inspector-row" id="row-2"><span class="placeholder">Waiting for final step…</span></div>
+      <div class="inspector-row" id="row-3"><span class="placeholder">Waiting for final step…</span></div>
+      <div class="inspector-row" id="row-4"><span class="placeholder">Waiting for final step…</span></div>
+      <div class="inspector-row" id="row-5"><span class="placeholder">Waiting for final step…</span></div>
+
+      <div class="section-label">Type Comparisons</div>
+      <div class="inspector-row highlight" id="row-6"><span class="placeholder">Waiting for final step…</span></div>
+      <div class="inspector-row highlight" id="row-7"><span class="placeholder">Waiting for final step…</span></div>
+
+      <div class="section-label">Reassignment Check</div>
+      <div class="inspector-row highlight" id="row-8"><span class="placeholder">Waiting for final step…</span></div>
+
+      <div class="section-label">Summary</div>
+      <div class="inspector-row final" id="row-final"><span class="placeholder">Waiting for final step…</span></div>
+
+      <p class="hint">Complete all steps in script.js, then run the final display step.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
