@@ -39,6 +39,10 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let playerName = "Ryan";
+let squadName = "RCS";
+let favoriteGame = "Call of Duty";
+
 
 // ── STEP 2: Create number variables ────────────────────
 // Create a let variable for missionNumber (number).
@@ -46,6 +50,8 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let missionNumber = 1; 
+let hoursPlayed = 0;
 
 // ── STEP 3: Combine strings with + ─────────────────────
 // Combine playerName and squadName into one string using +.
@@ -53,6 +59,7 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let callSign = (playerName + " " + squadName);
 
 // ── STEP 4: One variable inside a template literal ─────
 // Create a let variable called greeting.
@@ -60,6 +67,8 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 // ONLY playerName into a sentence.
 
 // YOUR CODE HERE:
+
+let greeting = `Hello ${playerName}`;
 
 
 // ── STEP 5: Multiple variables in a template literal ───
@@ -69,6 +78,7 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let missionIntro = `Hello ${playerName} ${squadName}, get ready to play ${favoriteGame}`;
 
 // ── STEP 6: Strings and numbers together ───────────────
 // Create a let variable called missionStats.
@@ -77,6 +87,8 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let missionStats = `You're on ${missionNumber} and have played ${hoursPlayed} hours`;
+
 
 // ── STEP 7: Reassign a number variable ─────────────────
 // Add 5 to hoursPlayed and store the result back into
@@ -84,6 +96,7 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+hoursPlayed = hoursPlayed + 5;;
 
 // ── STEP 8: Sentence with the updated value ────────────
 // Create a let variable called updatedStats.
@@ -92,12 +105,16 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let updatedStats = `You have played ${hoursPlayed} hours`
+
 
 // ── STEP 9: Log your work ──────────────────────────────
 // console.log() each of these variables:
 //   callSign, greeting, missionIntro, missionStats, updatedStats
 
 // YOUR CODE HERE:
+
+console.log(callSign, greeting, missionIntro, missionStats, updatedStats);
 
 
 // ── STEP 10: Build your final briefing line ────────────
@@ -107,6 +124,8 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 
 // YOUR CODE HERE:
 
+let finalBriefing = `${missionIntro} ${updatedStats}`;
+
 
 // ── STEP 11: Display on the page (prebuilt helper) ─────
 // Call the helper function below with your string variables.
@@ -115,6 +134,8 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 // displayMissionBriefing(greeting, missionIntro, missionStats, finalBriefing);
 
 // YOUR CODE HERE:
+
+displayMissionBriefing(greeting, missionIntro, missionStats, finalBriefing);
 
 
 // ── BONUS (optional) ───────────────────────────────────
@@ -126,3 +147,10 @@ function displayMissionBriefing(line1, line2, line3, finalLine) {
 // console.log(deploymentStatus);
 
 // YOUR CODE HERE:
+
+const studioName = "RyCreate Studio";
+let readyForDeployment = true;
+
+let deploymentStatus = `${studioName} says ${playerName} is ready for deployment: ${readyForDeployment}`;
+
+console.log(deploymentStatus);
