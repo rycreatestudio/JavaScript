@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lesson 2 Project — Mission Briefing</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0f1117;
+      color: #e8eaed;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 480px;
+    }
+
+    .instructions {
+      background: #1a1d27;
+      border: 1px solid #2a2f3d;
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #9aa0b0;
+    }
+
+    .instructions strong { color: #a78bfa; }
+
+    .card {
+      background: #1a1d27;
+      border: 1px solid #2a2f3d;
+      border-radius: 16px;
+      padding: 28px;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #2a2f3d;
+      color: #a78bfa;
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 4px 10px;
+      border-radius: 20px;
+      margin-bottom: 16px;
+    }
+
+    .card-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    .briefing-line {
+      background: #0f1117;
+      border-left: 3px solid #a78bfa;
+      border-radius: 0 8px 8px 0;
+      padding: 12px 16px;
+      margin-bottom: 12px;
+      font-size: 0.95rem;
+      line-height: 1.5;
+      color: #9aa0b0;
+    }
+
+    .briefing-line.final {
+      border-left-color: #34d399;
+      color: #e8eaed;
+      font-weight: 500;
+      margin-bottom: 0;
+    }
+
+    .placeholder {
+      color: #4b5563;
+      font-style: italic;
+    }
+
+    .hint {
+      margin-top: 20px;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+    }
+
+    kbd {
+      background: #2a2f3d;
+      border-radius: 4px;
+      padding: 2px 6px;
+      font-size: 0.75rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="instructions">
+      Open <strong>script.js</strong> and follow the steps.
+      Use the console (<kbd>Cmd+Option+J</kbd>) to check your <code>console.log()</code> output as you go.
+      The card below updates when you complete the final display step.
+    </div>
+
+    <div class="card">
+      <div class="badge">Mission Briefing</div>
+      <div class="card-title">Operation Status</div>
+
+      <div class="briefing-line" id="line-1"><span class="placeholder">Waiting for Step 9…</span></div>
+      <div class="briefing-line" id="line-2"><span class="placeholder">Waiting for Step 9…</span></div>
+      <div class="briefing-line" id="line-3"><span class="placeholder">Waiting for Step 9…</span></div>
+      <div class="briefing-line final" id="line-final"><span class="placeholder">Waiting for Step 9…</span></div>
+
+      <p class="hint">Complete all steps in script.js, then run the final display step.</p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
